@@ -1,9 +1,9 @@
 require 'spec_helper'
 
-RSpec.describe "Intrjekt::App::PodcastHelper" do
+RSpec.describe "Intrjekt::App::PostsHelper" do
   pending "add some examples to (or delete) #{__FILE__}" do
     let(:helpers){ Class.new }
-    before { helpers.extend Intrjekt::App::PodcastHelper }
+    before { helpers.extend Intrjekt::App::PostsHelper }
     subject { helpers }
 
     it "should return nil" do

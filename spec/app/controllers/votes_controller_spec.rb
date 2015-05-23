@@ -1,9 +1,9 @@
 require 'spec_helper'
 
-RSpec.describe "/user" do
+RSpec.describe "/votes" do
   pending "add some examples to #{__FILE__}" do
     before do
-      get "/user"
+      get "/votes"
     end
 
     it "returns hello world" do

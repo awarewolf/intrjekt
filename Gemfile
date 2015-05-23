@@ -12,7 +12,6 @@ source 'https://rubygems.org'
 
 # Project requirements
 gem 'rake'
-gem 'dotenv'
 
 # Component requirements
 gem 'sass'

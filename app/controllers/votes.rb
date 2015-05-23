@@ -1,4 +1,4 @@
-Intrjekt::App.controllers :episode do
+Intrjekt::App.controllers :votes do
   
   # get :index, :map => '/foo/bar' do
   #   session[:foo] = 'bar'

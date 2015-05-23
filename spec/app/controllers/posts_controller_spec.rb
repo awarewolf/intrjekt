@@ -1,9 +1,9 @@
 require 'spec_helper'
 
-RSpec.describe "/post" do
+RSpec.describe "/posts" do
   pending "add some examples to #{__FILE__}" do
     before do
-      get "/post"
+      get "/posts"
     end
 
     it "returns hello world" do

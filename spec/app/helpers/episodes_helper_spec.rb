@@ -1,9 +1,9 @@
 require 'spec_helper'
 
-RSpec.describe "Intrjekt::App::EpisodeHelper" do
+RSpec.describe "Intrjekt::App::EpisodesHelper" do
   pending "add some examples to (or delete) #{__FILE__}" do
     let(:helpers){ Class.new }
-    before { helpers.extend Intrjekt::App::EpisodeHelper }
+    before { helpers.extend Intrjekt::App::EpisodesHelper }
     subject { helpers }
 
     it "should return nil" do
