@@ -5,8 +5,8 @@ class Post < ActiveRecord::Base
   has_many :votes
 
   validates :title, presence: true
-  validates :content
-  validates :time
+  validates :content, presence: true
+  validates :time, presence: true
 
   #Is some sort of uniqueness required on the time (by post)?
 
