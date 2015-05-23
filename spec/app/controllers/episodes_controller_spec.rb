@@ -1,9 +1,9 @@
 require 'spec_helper'
 
-RSpec.describe "/episode" do
+RSpec.describe "/episodes" do
   pending "add some examples to #{__FILE__}" do
     before do
-      get "/episode"
+      get "/episodes"
     end
 
     it "returns hello world" do

@@ -2,12 +2,12 @@
 
 module Intrjekt
   class App
-    module UserHelper
+    module VotesHelper
       # def simple_helper_method
       # ...
       # end
     end
 
-    helpers UserHelper
+    helpers VotesHelper
   end
 end

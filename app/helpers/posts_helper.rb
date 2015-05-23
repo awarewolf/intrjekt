@@ -2,12 +2,12 @@
 
 module Intrjekt
   class App
-    module EpisodeHelper
+    module PostsHelper
       # def simple_helper_method
       # ...
       # end
     end
 
-    helpers EpisodeHelper
+    helpers PostsHelper
   end
 end

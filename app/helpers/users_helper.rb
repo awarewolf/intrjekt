@@ -2,12 +2,12 @@
 
 module Intrjekt
   class App
-    module PodcastHelper
+    module UsersHelper
       # def simple_helper_method
       # ...
       # end
     end
 
-    helpers PodcastHelper
+    helpers UsersHelper
   end
 end
