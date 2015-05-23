@@ -1,4 +1,4 @@
-Intrjekt::App.controllers :episodes do
+Intrjekt::App.controllers :homepage do
   
   # get :index, :map => '/foo/bar' do
   #   session[:foo] = 'bar'
@@ -18,33 +18,9 @@ Intrjekt::App.controllers :episodes do
   # get '/example' do
   #   'Hello world!'
   # end
-  
-  get :index do
-    render 'index'
-  end
 
-  get :new do
-
-  end
-
-  post :create do
-
-  end
-
-  get :show do
-
-  end
-
-  get :edit do
-
-  end
-
-  put :update do
-
-  end
-
-  delete :destroy do
-
+  get :index, map: '/' do
+    render '/homepage/index'
   end
 
 end
