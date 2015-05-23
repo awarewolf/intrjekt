@@ -6,7 +6,6 @@ class CreateEpisodes < ActiveRecord::Migration
       t.text :description
       t.string :audio_file_location
       t.string :url
-      t.string :timestamps
       t.timestamps
     end
   end

@@ -5,7 +5,6 @@ class CreatePodcasts < ActiveRecord::Migration
       t.text :description
       t.string :image_file_location
       t.string :url
-      t.string :timestamps
       t.timestamps
     end
   end
