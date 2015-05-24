@@ -1,0 +1,6 @@
+<%= errors_for(@podcast) %>
+<form action="/podcasts" method="POST">
+  <input type="text" name="podcast[title]" value="<%= @podcast.title %>">
+  <input type="text" multiline="true" name="podcast[description]" value="<%= @podcast.description %>">
+  <input type="submit" value="Save"></input>
+</form>
