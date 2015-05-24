@@ -18,7 +18,6 @@ gem 'sass'
 gem 'erubis', '~> 2.7.0'
 gem 'activerecord', '>= 3.1', :require => 'active_record'
 gem 'pg'
-# gem 'activerecord-postgresql-adapter'
 
 # Test requirements
 gem 'rspec', :group => 'test'

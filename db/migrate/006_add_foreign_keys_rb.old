@@ -1,0 +1,16 @@
+class AddForeignKeys < ActiveRecord::Migration
+  def self.up
+    add_foreign_key(:users, :posts)
+    add_foreign_key(:podcasts, :posts)
+    add_foreign_key(:users, :podcasts)
+    add_foreign_key(:podcasts, :episodes)
+    end
+  end
+
+  def self.down
+    remove_foreign_key(:users, :posts)
+    remove_foreign_key(:podcasts, :posts)
+    remove_foreign_key(:users, :podcasts)
+    remove_foreign_key(:podcasts, :episodes)
+  end
+end
