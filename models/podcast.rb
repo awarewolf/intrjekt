@@ -7,6 +7,7 @@ class Podcast < ActiveRecord::Base
   validates :title, presence: true
   validates :description, presence: true
   # validates :image_file_location
+  validates :audio_file_location, presence: true
   validates :url, format: { with: URI.regexp }, if: Proc.new { |a| a.url.present? }
 
 end
