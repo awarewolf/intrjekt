@@ -5,6 +5,7 @@ vendor/gems/*
 !vendor/gems/cache/
 .sass-cache/*
 db/*.db
+db/schema.rb
 .*.sw*
 config/database.rb
 .bundle

@@ -11,12 +11,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 6) do
+ActiveRecord::Schema.define(version: 5) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "episodes", force: :cascade do |t|
+    t.integer  "podcast_id"
     t.integer  "number"
     t.string   "title"
     t.text     "description"
@@ -27,6 +28,7 @@ ActiveRecord::Schema.define(version: 6) do
   end
 
   create_table "podcasts", force: :cascade do |t|
+    t.integer  "user_id"
     t.string   "title"
     t.text     "description"
     t.string   "image_file_location"
@@ -36,6 +38,8 @@ ActiveRecord::Schema.define(version: 6) do
   end
 
   create_table "posts", force: :cascade do |t|
+    t.integer  "user_id"
+    t.integer  "podcast_id"
     t.string   "title"
     t.text     "content"
     t.datetime "time"
@@ -47,16 +51,20 @@ ActiveRecord::Schema.define(version: 6) do
     t.string   "first_name"
     t.string   "last_name"
     t.string   "user_name"
+    t.string   "password"
     t.datetime "date_of_birth"
     t.string   "email"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.string   "password"
   end
 
   create_table "votes", force: :cascade do |t|
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.integer  "votable_id"
+    t.string   "votable_type"
+    t.datetime "created_at",   null: false
+    t.datetime "updated_at",   null: false
   end
+
+  add_index "votes", ["votable_id"], name: "index_votes_on_votable_id", using: :btree
 
 end

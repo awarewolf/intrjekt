@@ -1,7 +1,7 @@
 class CreateEpisodes < ActiveRecord::Migration
   def self.up
     create_table :episodes do |t|
-      t.belongs_to :podcast, :index true
+      t.references :podcast
       t.integer :number
       t.string :title
       t.text :description
