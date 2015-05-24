@@ -1,6 +1,21 @@
 <%= errors_for(@podcast) %>
-<form action="/podcasts" method="POST">
+<!-- <form action="/podcasts" method="POST">
   <input type="text" name="podcast[title]" value="<%= @podcast.title %>">
   <input type="text" multiline="true" name="podcast[description]" value="<%= @podcast.description %>">
   <input type="submit" value="Save"></input>
-</form>
+</form> -->
+
+<div class="container">
+  <form action="/podcasts" method="POST">
+    <div class="form-group">
+      <input name="podcast[title]"  type="text" class="form-control" id="" placeholder="Title" value="<%= @podcast.description %>">
+    </div>
+    <div class="form-group">
+      <input type="text" class="form-control" name="podcast[description]" id="" placeholder="Description" value="<%= @podcast.description %>">
+    </div>
+    <div class="form-group">
+      <input type="file" id="exampleInputFile">
+    </div>
+    <button type="submit" value="Save" class="btn btn-default">Upload</button>
+  </form>
+</div>

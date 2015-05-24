@@ -1,12 +1,13 @@
 <div class="container">
-  <%# @podcasts.each do |podcast| %>
+
+  <% @podcasts.each do |podcast| %>
     <div class="list-group">
-      <a href="/podcasts/<%# podcast.id %>1">
-        <p class="list-group-item" >Title: <%#= podcast.title %></p>
+      <a href="/podcasts/<%= podcast.id %>">
+        <p class="list-group-item" >Title: <%= podcast.title %></p>
       </a>
-      <p class="list-group-item">Description: <%#= podcast.description %></p>
+      <p class="list-group-item">Description: <%= podcast.description %></p>
 
     </div>
-  <%# end %>
+  <% end %>
 </div>
 

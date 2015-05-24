@@ -12,7 +12,7 @@ source 'https://rubygems.org'
 
 # Project requirements
 gem 'rake'
-
+gem 'pry'
 # Component requirements
 gem 'sass'
 gem 'erubis', '~> 2.7.0'

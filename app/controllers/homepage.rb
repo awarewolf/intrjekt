@@ -20,6 +20,7 @@ Intrjekt::App.controllers :homepage do
   # end
 
   get :index, map: '/' do
+    @podcasts = Podcast.all
     render '/homepage/index'
   end
 

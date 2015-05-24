@@ -24,7 +24,7 @@ Intrjekt::App.controllers :users do
   end
 
   get :new do
-    render 'index'
+    render 'new'
   end
 
   post :create do
