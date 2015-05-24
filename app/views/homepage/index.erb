@@ -1,6 +1,12 @@
-<h1>Home page</h1>
+<div class="container">
+  <%# @podcasts.each do |podcast| %>
+    <div class="list-group">
+      <a href="/podcasts/<%# podcast.id %>1">
+        <p class="list-group-item" >Title: <%#= podcast.title %></p>
+      </a>
+      <p class="list-group-item">Description: <%#= podcast.description %></p>
 
-<h2>title</h2>
-<p>description</p>
-<p>image?</p>
-<a href="/podcasts/1">url</a>
+    </div>
+  <%# end %>
+</div>
+
