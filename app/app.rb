@@ -15,7 +15,13 @@ module Intrjekt
     # get "/" do
     # "Hello World!"
     # end
-    
+    get '/posts.json' do
+        content_type :json
+        { :key2 => 'What the f**k is goin on in this podcast??', :key9 => 'Not really..', :key18 => "That's cruelty to animals.", :key25 => 'Yum, badger burgers!!', :key28 => 'Noo. Save the badgers!' }.to_json
+
+    end
+
+
     ##
     # Caching support.
     #
