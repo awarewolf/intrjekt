@@ -15,7 +15,7 @@
   <!-- from wavesurfer demo -->
   <script src="/js/wavesurfer/main.js"></script>
   <script src="/js/wavesurfer/trivia.js"></script>
-  
+
   <script src="/js/jquery-1.11.3.min.js"></script>
   <script src="/js/bootstrap.min.js"></script>
   <!-- custom scripts -->
@@ -42,18 +42,20 @@
           <li class=""><a href="/podcasts/new">Upload</a></li>
           <li class=""><a href="/users/new">Sign up</a></li>
         </ul>
-
-        <form class="navbar-form navbar-right" method="post" action="/login">
-          <div class="form-group">
-            <input type="text" class="form-control" name="email" placeholder="Email">
-            <input type="text" class="form-control" name="password" placeholder="Password">
-          </div>
-          <button type="submit" value="Submit" class="btn btn-default">Log in</button>
-        </form>
-        <form class="navbar-form navbar-right" method="get" action="/logout">
-          <button type="submit" value="Submit" class="btn btn-default">Log out</button>
-        </form>
-          <h3 class="navbar-right">Tom</h3>
+        <% if logged_in? %>
+          <h3 class="navbar-text navbar-right">Signed in as <%= current_user.user_name %></h3>
+          <form class="navbar-form navbar-right" method="get" action="sessions/logout">
+            <button type="submit" value="Submit" class="btn btn-default">Log out</button>
+          </form>
+        <% else %>
+          <form class="navbar-form navbar-right" method="post" action="/sessions/login">
+            <div class="form-group">
+              <input type="text" class="form-control" name="email" placeholder="Email">
+              <input type="password" class="form-control" name="password" placeholder="Password">
+            </div>
+            <button type="submit" value="Submit" class="btn btn-default">Log in</button>
+          </form>
+        <% end %>
       </div>
     </div>
   </nav>

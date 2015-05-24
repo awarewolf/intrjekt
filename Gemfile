@@ -18,6 +18,7 @@ gem 'sass'
 gem 'erubis', '~> 2.7.0'
 gem 'activerecord', '>= 3.1', :require => 'active_record'
 gem 'pg'
+gem 'padrino-warden', :github => 'jondot/padrino-warden'
 
 # Test requirements
 gem 'rspec', :group => 'test'

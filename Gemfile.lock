@@ -1,3 +1,10 @@
+GIT
+  remote: git://github.com/jondot/padrino-warden.git
+  revision: 48753645f87f64b52350eb4061584a35418a1ea5
+  specs:
+    padrino-warden (0.20.2)
+      warden (>= 0.10.3)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -107,6 +114,8 @@ GEM
       thread_safe (~> 0.1)
     url_mount (0.2.1)
       rack
+    warden (1.2.3)
+      rack (>= 1.0)
 
 PLATFORMS
   ruby
@@ -116,6 +125,7 @@ DEPENDENCIES
   erubis (~> 2.7.0)
   json
   padrino (= 0.12.5)
+  padrino-warden!
   pg
   pry
   rack-test

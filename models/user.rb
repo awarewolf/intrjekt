@@ -11,4 +11,9 @@ class User < ActiveRecord::Base
   # validates :date_of_birth, presence: true
   validates :email, presence: true, uniqueness: true, format: { with: /\A([^@\s]+)@((?:[-a-z0-9]+\.)+[a-z]{2,})\Z/i, message: "Invalid email format" }
 
+  def self.authenticate(email,password)
+    return if email.nil? || password.nil?
+    find_by(email: email, password: password)
+  end
+
 end
