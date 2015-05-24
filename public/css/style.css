@@ -85,4 +85,6 @@ canvas {
 textarea {
   resize: vertical;
 }
-
+.nudge-right{
+  margin-left: 30px;
+}
