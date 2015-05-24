@@ -43,4 +43,5 @@ Intrjekt::App.controllers :posts do
     @post.destroy
     redirect "posts"
   end
+
 end
