@@ -8,17 +8,6 @@ module Intrjekt
     enable :sessions
     enable  :reload
 
-    # set :bind, '0.0.0.0'
-    # set :port, 3000
-
-    # get '/' do
-    #     erb :index
-    # end
-
-    # get :index do
-    #     redirect '../public/index.html'
-    # end
-
     ##
     # Caching support.
     #
