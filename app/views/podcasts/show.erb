@@ -1,0 +1,65 @@
+<h1><%= @podcast.title %></h1>
+<p><%= @podcast.description %></p>
+
+<div class="wave-container" id="waveform">
+        <div class="progress progress-striped active" id="progress-bar">
+            <div class="progress-bar progress-bar-info"></div>
+        </div>
+        <!-- Here be the waveform -->
+    </div>
+
+    <div class="interject">
+      <p> Intrjekt !</p>
+    </div>
+
+    <div class="container">
+      <div class="player-ctrl-container">
+        <button class="btn player-ctrl" data-action="back">
+            <!-- <i class="glyphicon glyphicon-step-backward"></i> -->
+            Backward
+        </button>
+
+        <button class="btn player-ctrl" data-action="play">
+            <!-- <i class="glyphicon glyphicon-play"></i> -->
+            Play
+            /
+            <!-- <i class="glyphicon glyphicon-pause"></i> -->
+            Pause
+        </button>
+
+        <button class="btn player-ctrl" data-action="forth">
+            <!-- <i class="glyphicon glyphicon-step-forward"></i> -->
+            Forward
+        </button>
+
+        <button class="btn player-ctrl" data-action="toggle-mute">
+            <!-- <i class="glyphicon glyphicon-volume-off"></i> -->
+            Toggle Mute
+        </button>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="well">
+      <p>Create new Post at current timeline position:</p>
+          <textarea rows="1" cols="50" type="text" class="form-control" name="" placeholder="Your thoughts here">
+          </textarea>
+      </div>
+    </div>
+
+    <div class="container post-container">
+      <div class="well">
+      <div class="container">
+          <h3>Posts:</h3>
+          <h1 id="post">I am a post on the timeline. Blah blah Blah blah blah blah Blah blah</h1>
+            <div class="well comments-container">
+              <div class="well comment">
+                I am a comment on the post.
+              </div>
+              <button class="btn btn-default btn-xs">Add comment</button>
+              <input type="text" class="form-control" name="" placeholder="Comment on this post">
+            </div>
+        </div>
+      </div>
+    </div>
+

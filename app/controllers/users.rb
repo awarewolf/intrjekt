@@ -18,13 +18,13 @@ Intrjekt::App.controllers :users do
   # get '/example' do
   #   'Hello world!'
   # end
-  
+
   get :index do
 
   end
 
   get :new do
-
+    render 'index'
   end
 
   post :create do

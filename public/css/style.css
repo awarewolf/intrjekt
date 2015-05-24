@@ -1,0 +1,88 @@
+body {
+  background-color: #bbb;
+}
+
+.waveform {
+  width: 100%;
+}
+
+.interject{
+  border: 5px solid #aaa;
+  border-radius: 100%;
+  width: 100px;
+  height: 100px;
+  background-color: #f44;
+  position: relative;
+  margin-bottom: -80px;
+  margin-left: 80%;
+  transition-duration: .2s;
+}
+
+.interject p{
+  color: #eee;
+  font-size: 1.5em;
+  line-height: 4;
+  margin-left: 5px;
+}
+
+.interject:hover {
+  background-color: #e11;
+  transition-duration: .2s;
+}
+
+.comment {
+  background-color: #eee;
+}
+.comments-container {
+  background-color: #ddd;
+  margin: 0px 5%;
+}
+.post-container{
+  height: 600px;
+  overflow: scroll;
+}
+
+#post{
+  margin-top: 30px;
+}
+
+.player-ctrl-container{
+  margin-bottom: 10px;
+}
+
+.player-ctrl{
+  border-color: #67FF4D;
+  color: #67FF4D;
+  background-color: #444;
+  transition-duration: 0.4s;
+}
+
+.player-ctrl:hover {
+  border-color: transparent;
+  color: #444;
+  background-color: #67FF4D;
+  transition-duration: 0.4s;
+}
+
+.player-ctrl:focus {
+  border-color: transparent;
+  color: #444;
+  background-color: #67FF4D;
+  transition-duration: 0.4s;
+}
+
+canvas {
+  background-color: #444;
+  margin-bottom: 100px;
+}
+
+.wave-container{
+  margin-top: 0px;
+  background-color: #444;
+  margin-bottom: 40px;
+}
+
+textarea {
+  resize: vertical;
+}
+

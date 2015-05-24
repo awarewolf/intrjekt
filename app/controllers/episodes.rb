@@ -20,7 +20,7 @@ Intrjekt::App.controllers :episodes do
   # end
   
   get :index do
-
+    render 'index'
   end
 
   get :new do

@@ -1,0 +1,6 @@
+<%= errors_for(@post) %>
+<form action="/posts" method="POST">
+  <input type="text" name="post[title]" value="<%= @post.title %>">
+  <input type="text" multiline="true" name="post[description]" value="<%= @post.description %>">
+  <input type="submit" value="Save"></input>
+</form>
