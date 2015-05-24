@@ -8,7 +8,8 @@ module Intrjekt
     enable :sessions
     enable  :reload
 
-
+<<<<<<< HEAD
+=======
     # set :bind, '0.0.0.0'
     # set :port, 3000
 
@@ -16,6 +17,7 @@ module Intrjekt
     # "Hello World!"
     # end
     
+>>>>>>> feature/add_post_json_controller
     ##
     # Caching support.
     #
