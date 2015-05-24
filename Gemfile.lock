@@ -107,6 +107,7 @@ PLATFORMS
 DEPENDENCIES
   activerecord (>= 3.1)
   erubis (~> 2.7.0)
+  json
   padrino (= 0.12.5)
   pg
   rack-test
