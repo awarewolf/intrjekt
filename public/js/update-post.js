@@ -1,6 +1,5 @@
 $(function() {
 
-
 // Load from url
   var fileLocation = '/audio/CarbonFootprint.wav'
   wavesurfer.load(fileLocation)
