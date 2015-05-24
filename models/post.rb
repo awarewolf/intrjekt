@@ -2,7 +2,7 @@ class Post < ActiveRecord::Base
 
   belongs_to :user
   belongs_to :podcast
-  has_many :votes
+  has_many :votes, as: :votable
 
   validates :title, presence: true
   validates :content, presence: true

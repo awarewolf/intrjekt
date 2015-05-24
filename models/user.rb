@@ -2,7 +2,7 @@ class User < ActiveRecord::Base
 
   has_many :podcasts
   has_many :posts
-  has_many :votes, through: :posts
+  has_many :votes, as: :votable
 
   # validates :first_name, presence: true
   # validates :last_name, presence: true

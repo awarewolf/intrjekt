@@ -1,6 +1,7 @@
 class Episode < ActiveRecord::Base
 
   belongs_to :podcast
+  has_many :votes, as: :votable
 
   validates :number, presence: true, uniqueness: true, numericality: { integer_only: true } #custom validate that it is in sequence?
   validates :title, presence: true
