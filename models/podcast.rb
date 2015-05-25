@@ -2,7 +2,7 @@ class Podcast < ActiveRecord::Base
 
   belongs_to :user
   has_many :posts
-  has_many :episodes
+  # has_many :episodes
 
   validates :title, presence: true
   validates :description, presence: true

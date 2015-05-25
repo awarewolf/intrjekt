@@ -4,7 +4,7 @@ class CreatePodcasts < ActiveRecord::Migration
       t.references :user
       t.string :title
       t.text :description
-      t.integer :episode_number
+      t.string :episode
       t.string :image_file_location
       t.string :audio_file_location
       t.string :url
