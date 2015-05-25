@@ -1,6 +1,6 @@
 Intrjekt::App.controllers :json do
 
-  get "/comments" do
+  get "/posts" do
     content_type :json
     binding.pry
       # session[:podcast_posts]

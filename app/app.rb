@@ -4,6 +4,7 @@ module Intrjekt
     use ConnectionPoolManagement
     register Padrino::Mailer
     register Padrino::Helpers
+    register Padrino::Warden
 
     enable :sessions
     enable  :reload

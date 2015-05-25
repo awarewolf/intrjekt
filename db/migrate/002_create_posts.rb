@@ -5,7 +5,7 @@ class CreatePosts < ActiveRecord::Migration
       t.references :podcast
       t.string :title
       t.text :content
-      t.datetime :time
+      t.integer :time
       t.timestamps
     end
   end

@@ -3,8 +3,13 @@
 module Intrjekt
   class App
     module UsersHelper
-      # def simple_helper_method
-      # ...
+      # def user_logged_in?
+      #   !!current_user
+      # end
+
+      # def current_user
+      #   return if session[:email].nil?
+      #   @current_user ||= User.find_by(email: session[:email])
       # end
     end
 

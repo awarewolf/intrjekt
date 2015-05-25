@@ -4,9 +4,10 @@ $(function() {
   var fileLocation = '/audio/CarbonFootprint.wav'
   wavesurfer.load(fileLocation)
 
-  post = { 2: 'What the f**k is goin on in this podcast??', 9: 'Not really..', 18: "That's cruelty to animals.", 25: 'Yum, badger burgers!!', 28: 'Noo. Save the badgers!' };
+  // post = { 2: 'What the f**k is goin on in this podcast??', 9: 'Not really..', 18: "That's cruelty to animals.", 25: 'Yum, badger burgers!!', 28: 'Noo. Save the badgers!' };
 
-  $.getJSON( "http://localhost:3000/json/comments", function( data ) {
+  $.getJSON( "/json/posts", function( data ) {
+
     console.log("get JSON")
     post = data
 })
