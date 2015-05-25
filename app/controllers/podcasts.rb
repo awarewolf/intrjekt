@@ -18,7 +18,7 @@ Intrjekt::App.controllers :podcasts do
   # get '/example' do
   #   'Hello world!'
   # end
-  
+
   get :index do
     @podcasts = Podcast.all #Maybe add pagination?
     render :index
@@ -30,8 +30,11 @@ Intrjekt::App.controllers :podcasts do
   end
 
   post :create, map: "podcasts" do
-    @podcast = Podcast.new(params[:podcast])
-    if @podcast.save
+
+    @podcast = current_user.podcasts.create(params["podcast"])
+    # current_user.podcast.create(title: '', :description: )
+
+    if current_user
       redirect "podcasts/#{@podcast.id}"
     else
       render :new
