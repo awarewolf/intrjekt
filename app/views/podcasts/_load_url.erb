@@ -1,6 +1,6 @@
   <script>
   $(function() {
-  var fileLocation = '/audio/CarbonFootprint.wav'
+  var fileLocation = "<%= session[:podcast_file_location] %>"
   wavesurfer.load(fileLocation)
   });
   </script>

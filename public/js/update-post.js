@@ -4,7 +4,7 @@ $(function() {
 
   $.getJSON( "/json/posts", function( data ) {
 
-    console.log("get JSON")
+    console.log(data)
     post = data
 })
   .fail(function() {
