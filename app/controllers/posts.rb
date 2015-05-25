@@ -1,22 +1,16 @@
 Intrjekt::App.controllers :posts do
   
   get :index do
-    # @posts = Post.all #Maybe add pagination?
-    # render :index
   end
 
   get :new do
-
     @post = Post.new
     render :new
   end
 
   post :create, map: "posts" do
-
     @podcast = Podcast.find(session[:podcast_id])
-
     @post = current_user.posts.create(title: params[:title], time: params[:time].to_i, content: params[:content])
-
     @podcast.posts << @post
 
   end

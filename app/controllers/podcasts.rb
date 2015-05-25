@@ -1,23 +1,4 @@
 Intrjekt::App.controllers :podcasts do
-  
-  # get :index, :map => '/foo/bar' do
-  #   session[:foo] = 'bar'
-  #   render 'index'
-  # end
-
-  # get :sample, :map => '/sample/url', :provides => [:any, :js] do
-  #   case content_type
-  #     when :js then ...
-  #     else ...
-  # end
-
-  # get :foo, :with => :id do
-  #   'Maps to url '/foo/#{params[:id]}''
-  # end
-
-  # get '/example' do
-  #   'Hello world!'
-  # end
 
   get :index do
     binding.pry
@@ -33,7 +14,6 @@ Intrjekt::App.controllers :podcasts do
   post :create, map: "podcasts" do
 
     @podcast = current_user.podcasts.create(params["podcast"])
-    # current_user.podcast.create(title: '', :description: )
 
     if current_user
       redirect "podcasts/#{@podcast.id}"
@@ -44,13 +24,8 @@ Intrjekt::App.controllers :podcasts do
 
   get :show, map: "podcasts/:id" do
     @podcast = Podcast.find(params[:id])
-
-    session[:podcast_id] = @podcast.id
-
     @id_param = params[:id]
-
-    session[:podcast_id] = params[:id]
-
+    session[:podcast_id] = @podcast.id
     session[:podcast_file_location] = @podcast.audio_file_location
 
     render :show
