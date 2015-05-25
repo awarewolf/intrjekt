@@ -20,8 +20,8 @@ document.addEventListener('DOMContentLoaded', function () {
     // Init
     wavesurfer.init(options);
     // Load audio from URL
-        // wavesurfer.load('/audio/CarbonFootprint.wav');
-    // wavesurfer.load('example/media/demo.wav');
+    // wavesurfer.load('/audio/CarbonFootprint.wav');
+
 
     // Regions
     if (wavesurfer.enableDragSelection) {
