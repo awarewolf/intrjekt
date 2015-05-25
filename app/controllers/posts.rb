@@ -19,18 +19,6 @@ Intrjekt::App.controllers :posts do
 
     @podcast.posts << @post
 
-    # @podcast = Podcast.find(session[:podcast_id])
-
-    # @post = Post.new(time: params[:time].to_i, content: params[:content])
-
-    # @podcast.posts << @post
-    # @podcast.save
-
-    # if @post.save
-    #   redirect "posts/#{@post.id}"
-    # else
-    #   render :new
-    # end
   end
 
   get :show, map: "posts/:id" do

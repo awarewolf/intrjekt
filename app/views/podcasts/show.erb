@@ -1,4 +1,5 @@
 <%= partial "podcasts/load_url" %>
+
 <h1 class="nudge-right"><%= @podcast.title %></h1>
 <h3 class="nudge-right"><%= @podcast.description %></h3>
 
@@ -11,6 +12,7 @@
 
 <div class="interject">
   <p> Intrjekt !</p>
+
 </div>
 
 <div class="container">
@@ -42,10 +44,14 @@
 
 <div class="container">
   <div class="well">
+
   <p>Create new Post at current timeline position:</p>
       <input type="text" class="form-control post-title" name="" placeholder="Title">
       </input>
-      <br/>
+      </br>
+
+  <p>Create new Post at current timeline position:   </p>
+
       <textarea rows="1" cols="50" type="text" class="form-control post-text" name="" placeholder="Your thoughts here">
       </textarea>
   </div>
