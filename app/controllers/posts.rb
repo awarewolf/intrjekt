@@ -13,9 +13,7 @@ Intrjekt::App.controllers :posts do
 
   post :create, map: "posts" do
 
-    binding.pry
-
-    @podcast = Podcast.find(session[:podcast_id])
+    @podcast = Podcast.find(session["podcast_id"])
 
     @podcast.post = Post.create(time: params[:time].to_i, content: params[:content])
 

@@ -27,7 +27,7 @@ Intrjekt::App.controllers :users do
     render 'new'
   end
 
-  post :create do
+  post :create, map: "users" do
 
   end
 

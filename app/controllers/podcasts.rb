@@ -20,6 +20,7 @@ Intrjekt::App.controllers :podcasts do
   # end
 
   get :index do
+    binding.pry
     @podcasts = Podcast.all #Maybe add pagination?
     render :index
   end
@@ -43,9 +44,9 @@ Intrjekt::App.controllers :podcasts do
 
   get :show, map: "podcasts/:id" do
     @podcast = Podcast.find(params[:id])
-    @id_param = params[:id]
-    session[:podcast_posts] = @podcast.posts
-    session[:podcast_id] = params[:id]
+
+    # session[:podcast_posts] = @podcast.posts
+    session[:podcast_id] = @podcast.id
     session[:podcast_file_location] = @podcast.audio_file_location
     render :show
   end
