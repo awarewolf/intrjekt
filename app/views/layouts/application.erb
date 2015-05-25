@@ -39,7 +39,9 @@
 
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
         <ul class="nav navbar-nav">
+        <% if logged_in? %>
           <li class=""><a href="/podcasts/new">Upload</a></li>
+        <% end %>
           <li class=""><a href="/users/new">Sign up</a></li>
         </ul>
         <% if logged_in? %>
