@@ -44,9 +44,14 @@ Intrjekt::App.controllers :podcasts do
   get :show, map: "podcasts/:id" do
     @podcast = Podcast.find(params[:id])
     @id_param = params[:id]
-    session[:podcast_posts] = @podcast.posts
+    # session[:podcast_posts] = @podcast.posts
     session[:podcast_id] = params[:id]
     session[:podcast_file_location] = @podcast.audio_file_location
+    @posts = {"2" => 'Server data'}
+    @podcast.posts.each do |post|
+      post[:title] = post[:content]
+    end
+    # @posts = @posts.to_json
     render :show
   end
 
